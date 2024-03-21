@@ -1,8 +1,5 @@
 import requests
-
-DOMAIN_URL = 'https://reqres.in/api'
-USER_URL = DOMAIN_URL + '/users'
-
+from conftest import  USER_URL
 
 def test_get_users():
     response = requests.get(url=USER_URL, params={'page': 2})

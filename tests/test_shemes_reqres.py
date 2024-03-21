@@ -1,9 +1,7 @@
 from jsonschema import validate
 import requests
 import json
-
-DOMAIN_URL = 'https://reqres.in/api'
-USER_URL = DOMAIN_URL + '/users'
+from conftest import  USER_URL, DOMAIN_URL
 
 
 
