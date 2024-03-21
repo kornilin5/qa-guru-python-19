@@ -1,5 +1,6 @@
 import requests
-from conftest import  USER_URL
+from conftest import USER_URL
+
 
 def test_get_users():
     response = requests.get(url=USER_URL, params={'page': 2})
